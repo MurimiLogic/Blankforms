@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Hub - Professional Forms Made Simple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background-image: linear-gradient(to right, #6D28D9, #4F46E5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg class="h-8 w-8 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span class="text-2xl font-bold text-gray-800">Forms Hub</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600">Contact</a>
+                <a href="#newsletter" class="text-gray-600 hover:text-indigo-600">Newsletter</a>
+                <a href="#feedback" class="text-gray-600 hover:text-indigo-600">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Professional Forms Made Simple</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Connect with us, stay updated, and share your thoughts through our beautifully designed, user-friendly forms.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="bg-white text-indigo-600 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition duration-300">Get Started</a>
+                <a href="#" class="bg-indigo-500 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-indigo-400 transition duration-300">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16">
+
+        <!-- Get In Touch Section -->
+        <section id="contact" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Get In Touch</h2>
+                <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Have a question or want to work together? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <form>
+                    <div class="mb-6">
+                        <label for="full-name" class="block text-gray-700 font-semibold mb-2">Full Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="full-name" placeholder="Enter your full name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" placeholder="Enter your email address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="block text-gray-700 font-semibold mb-2">Subject</label>
+                        <select id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option>Select a subject</option>
+                            <option>General Inquiry</option>
+                            <option>Partnership</option>
+                            <option>Support</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message <span class="text-red-500">*</span></label>
+                        <textarea id="message" rows="5" placeholder="Tell us more about your inquiry..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                    </div>
+                    <div class="mb-6 flex items-center">
+                        <input type="checkbox" id="terms" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        <label for="terms" class="ml-2 text-gray-600">I agree to the <a href="#" class="text-indigo-600 hover:underline">Privacy Policy</a> and <a href="#" class="text-indigo-600 hover:underline">Terms of Service</a></label>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center space-x-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span>Send Message</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Stay Updated Section -->
+        <section id="newsletter" class="mb-20 hero-gradient rounded-xl p-12 text-white text-center">
+            <div class="max-w-2xl mx-auto">
+                 <div class="mb-4">
+                    <svg class="h-12 w-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">Stay Updated</h2>
+                <p class="mb-6">Subscribe to our newsletter and be the first to know about new features, updates, and exclusive content.</p>
+                <form class="flex flex-col md:flex-row items-center justify-center gap-4">
+                    <input type="email" placeholder="Enter your email address" class="w-full md:w-auto flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                    <button type="submit" class="w-full md:w-auto bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300 flex items-center justify-center space-x-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <span>Subscribe Now</span>
+                    </button>
+                </form>
+                 <div class="mt-4 flex items-center justify-center">
+                    <input type="checkbox" id="consent" class="h-4 w-4 bg-transparent border-white text-indigo-600 rounded focus:ring-white">
+                    <label for="consent" class="ml-2 text-sm text-indigo-100">I consent to receive marketing emails and can unsubscribe at any time.</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Your Feedback Section -->
+        <section id="feedback" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Share Your Feedback</h2>
+                <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Help us improve by sharing your thoughts and experiences. Your feedback is valuable to us and helps shape our future development.</p>
+            </div>
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <form>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Overall Experience</h3>
+                        <p class="text-gray-600 mb-4">How would you rate our service?</p>
+                        <div class="flex justify-center space-x-2 md:space-x-4">
+                            <button type="button" class="flex flex-col items-center p-3 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-red-400 focus:border-red-400">
+                                <span class="text-2xl">😞</span> <span class="text-sm text-gray-600">Poor</span>
+                            </button>
+                            <button type="button" class="flex flex-col items-center p-3 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                <span class="text-2xl">😐</span> <span class="text-sm text-gray-600">Fair</span>
+                            </button>
+                            <button type="button" class="flex flex-col items-center p-3 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400">
+                                <span class="text-2xl">😊</span> <span class="text-sm text-gray-600">Good</span>
+                            </button>
+                             <button type="button" class="flex flex-col items-center p-3 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400">
+                                <span class="text-2xl">😄</span> <span class="text-sm text-gray-600">Great</span>
+                            </button>
+                            <button type="button" class="flex flex-col items-center p-3 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-400">
+                                <span class="text-2xl">❤️</span> <span class="text-sm text-gray-600">Excellent</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4">How did you hear about us?</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center"><input type="radio" name="source" class="h-4 w-4 text-indigo-600 border-gray-300"><label class="ml-3 text-gray-700">Search Engine</label></div>
+                                <div class="flex items-center"><input type="radio" name="source" class="h-4 w-4 text-indigo-600 border-gray-300"><label class="ml-3 text-gray-700">Social Media</label></div>
+                                <div class="flex items-center"><input type="radio" name="source" class="h-4 w-4 text-indigo-600 border-gray-300"><label class="ml-3 text-gray-700">Friend/Colleague</label></div>
+                                <div class="flex items-center"><input type="radio" name="source" class="h-4 w-4 text-indigo-600 border-gray-300"><label class="ml-3 text-gray-700">Online Advertising</label></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4">What features interest you most?</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center"><input type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded"><label class="ml-3 text-gray-700">Form Builder</label></div>
+                                <div class="flex items-center"><input type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded"><label class="ml-3 text-gray-700">Analytics Dashboard</label></div>
+                                <div class="flex items-center"><input type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded"><label class="ml-3 text-gray-700">Third-party Integrations</label></div>
+                                <div class="flex items-center"><input type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded"><label class="ml-3 text-gray-700">Pre-built Templates</label></div>
+                                <div class="flex items-center"><input type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded"><label class="ml-3 text-gray-700">Workflow Automation</label></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <label for="comments" class="block text-xl font-semibold text-gray-800 mb-4">Additional Comments</label>
+                        <textarea id="comments" rows="4" placeholder="Tell us what we're doing well and what we could improve..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Follow-up Preference</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center"><input type="radio" name="followup" class="h-4 w-4 text-indigo-600 border-gray-300"><label class="ml-3 text-gray-700">Email me about my feedback</label></div>
+                            <div class="flex items-center"><input type="radio" name="followup" class="h-4 w-4 text-indigo-600 border-gray-300"><label class="ml-3 text-gray-700">Call me to discuss further</label></div>
+                            <div class="flex items-center"><input type="radio" name="followup" class="h-4 w-4 text-indigo-600 border-gray-300"><label class="ml-3 text-gray-700">No follow-up needed</label></div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-end space-x-4">
+                        <button type="button" class="bg-gray-200 text-gray-700 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition duration-300">Clear Form</button>
+                        <button type="submit" class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Submit Feedback</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="bg-white rounded-xl shadow-lg p-12">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Why Choose Our Forms?</h2>
+                <p class="text-gray-600 mt-2 max-w-3xl mx-auto">Trusted by thousands of users worldwide for reliable, secure, and user-friendly form solutions.</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="w-20 h-20 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center"></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Secure</h3>
+                    <p class="text-gray-600">SSL encryption and GDPR compliant data handling.</p>
+                </div>
+                <div>
+                    <div class="w-20 h-20 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center"></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Responsive</h3>
+                    <p class="text-gray-600">Perfect experience on all devices and screen sizes.</p>
+                </div>
+                <div>
+                    <div class="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center"></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Fast</h3>
+                    <p class="text-gray-600">Optimized performance with instant form validation.</p>
+                </div>
+                <div>
+                    <div class="w-20 h-20 bg-yellow-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-yellow-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Analytics</h3>
+                    <p class="text-gray-600">Detailed insights and conversion tracking.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <span class="text-2xl font-bold">Forms Hub</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md">Professional form solutions that help you connect with your audience, gather feedback, and grow your business.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-3.096 0 1.548 1.548 0 013.096 0zM6.554 16.338H3.457v-8.59h3.097v8.59zM17.88 3H6.12C4.4 3 3 4.4 3 6.12v11.76C3 19.6 4.4 21 6.12 21h11.76c1.72 0 3.12-1.4 3.12-3.12V6.12C21 4.4 19.6 3 17.88 3z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.293 2.836 7.92 6.696 9.264.488.09.666-.212.666-.47 0-.232-.009-.846-.013-1.66-2.754.598-3.335-1.33-3.335-1.33-.444-1.126-1.084-1.426-1.084-1.426-.887-.606.067-.594.067-.594.98.068 1.495 1.006 1.495 1.006.87 1.49 2.28 1.06 2.836.81.088-.63.34-.1.06.666-2.168-.22-4.448-1.084-4.448-4.824 0-1.066.38-1.938 1.002-2.62-.1-.22-.434-1.24.096-2.583 0 0 .82-.262 2.684 1.002a9.37 9.37 0 012.44-.328c.83.01 1.66.112 2.44.328 1.864-1.264 2.68-1.002 2.68-1.002.53 1.342.198 2.362.096 2.583.622.682 1.002 1.554 1.002 2.62 0 3.75-2.284 4.594-4.456 4.814.35.302.662.898.662 1.81v2.68c0 .26.178.564.67.47C19.168 19.92 22 16.292 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#newsletter" class="text-gray-400 hover:text-white">Newsletter</a></li>
+                        <li><a href="#feedback" class="text-gray-400 hover:text-white">Feedback</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-400">
+                &copy; 2024 Forms Hub. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
